@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ce3034a5c8155c1b2148d5ffcb2e29e",
+    "content-hash": "a3bc91b6fdcc0fd68fb80763d18ea0c9",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -988,6 +988,41 @@
                 }
             ],
             "time": "2025-03-06T22:45:56+00:00"
+        },
+        {
+            "name": "emre/admin-panel",
+            "version": "0.1.0",
+            "dist": {
+                "type": "path",
+                "url": "packages/Emre/AdminPanel",
+                "reference": "6def99a9f70f02f6784c21522c637de25a40d157"
+            },
+            "require": {
+                "filament/filament": "^4.0",
+                "laravel/framework": "^12.0",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Emre\\AdminPanel\\Providers\\AdminPanelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Emre\\AdminPanel\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Reusable Filament admin panel",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "filament/actions",
@@ -11060,7 +11095,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "emre/admin-panel": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
